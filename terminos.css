@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:wght@300;900&display=swap');
+
+
+
+body
+{
+  /*Margenes del body*/
+  margin:           0px               ;
+  padding:          0px               ;
+  border:           none              ;
+}
+
+
+
+
+/*************************************** ENCABEZADO *****************************************/
+
+header {
+  /*Posicion del encabezado*/
+  position:         sticky            ;
+  top:              0px               ;
+
+  /*Margenes del encabezado*/
+  margin:           0px               ;
+  padding:          0px               ;
+  border:           none              ;
+
+  /*Comportamiento de los contenedores del encabezado*/
+  display:          flex              ;
+  flex-direction:   row               ;
+  align-items:      center            ;
+  justify-content:  space-evenly      ; 
+
+  /*Estilo del encabezado*/
+  background-color: rgb(20, 20, 20) ;
+}
+
+
+
+h1 { 
+  /*Comportamiento de los contenedores del encabezado*/
+  display:          flex              ;
+  align-items:      center            ;
+  justify-content:  space-evenly      ;
+ 
+  /*Estilo del texto del menu*/
+  text-decoration:  none              ;     /*sin subrayado*/
+  color:            red             ;     /*color*/
+  font-size:        20px              ;     /*tamaño de letra*/
+  list-style:       none              ;     /*lista sin viñetas*/
+  font-family:      'calibri'         ;
+}
+
+
+
+.menu ul {
+  /*Comportamiento de los contenedores del menu*/
+  display:          flex              ;
+  flex-direction:   row               ;
+  gap:              20px              ;
+  
+  /*Estilo del menu*/
+  list-style:       none              ;     /*lista sin viñetas*/
+}
+
+
+
+.menu ul li a {
+  /*Estilo del texto del menu*/
+  text-decoration:  none              ;     /*sin subrayado*/
+  text-transform:   capitalize        ;     /*primer letra en mayuscula*/
+  color:            rgb(78, 78, 78) ;     /*color del texto*/
+  font-size:        25px              ;     /*tamaño de letra*/
+  list-style:       none              ;     /*lista sin viñetas*/
+  font-family:      'calibri'         ;     /*tipo de fuente*/
+  background-color: rgb(0, 0, 0)    ;     /*color de fondo del boton*/
+  padding:          5px 30px 5px 30px ;     
+  border-radius:    4px 20px 4px 20px ;     /*radio de los bordes del boton*/
+  border-top:       2px solid red   ;     /*color borde superios del boton*/
+  border-bottom:    2px solid rgb(47, 47, 47); 
+  font-family:      'Roboto', sans-serif;
+}
+
+
+
+/* CAMBIO COLOR DEL MENU CUANDO PASO MOUSE */
+.menu ul li a:hover {
+  color:            rgb(255, 0, 0)  ;
+  border-bottom:    2px solid red   ;     /*color borde superios del boton*/
+}
+
+
+
+.redes ul {
+  /*Comportamiento de los iconos de redes*/ 
+  display:          flex            ; 
+  flex-direction:   row             ;     
+  gap:              20px            ;     /*espaciado entre iconos*/
+  list-style:       none            ;     /*lista sin viñetas*/
+}
+
+
+
+ .redes ul li a {
+  /*Estilo de los iconos de redes*/
+  color:            rgb(212, 18, 18);   /*color*/
+  font-size:        23px              ;   /*tamaño del icono*/
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.redes ul li {
+  /*Transicion de tamaño con demora*/   
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+/* CAMBIO ESTILO DE REDES SOCIALES CUANDO PASO MOUSE */
+.redes ul li:hover { 
+  color:            red           ;     /*cambio el color a rojo intenso*/   
+  transform:        scale(1.9)      ;     /*aumento el tamaño del icono en un 90%*/
+}
+
+
+
+
+/****************************************** MAIN ********************************************/
+
+main {
+  /*Margenes del main*/
+  margin:           0px              ;
+  padding:          20px 200px 20px 200px ;
+  border:           none             ;
+
+  /*Comportamiento de los contenedores del main*/
+  display:          flex             ;
+  justify-content:  center           ;
+  
+  /*Estilo del main*/
+  background-color: rgba(0, 0, 0)  ;
+  color:            rgb(130, 130, 130);
+  font-size:        19px             ;
+  text-align:       justify          ;
+  font-family:      'Courier New', Courier, monospace;
+}
+
+
+
+.menu div {
+  padding-bottom:   30px             ;
+}
+
+
+
+.menu div div h3 {
+  color: rgb(0, 225, 255)      ;
+}
+
+
+
+.menu div h2 {
+  display:          flex             ;
+  justify-content:  center           ;
+  padding-bottom:   30px             ;
+}
+
+
+
+
+/***************************************** FOOTER *******************************************/
+
+footer { 
+  /*Margenes del footer*/
+  margin:           0px             ;
+  padding:          5px             ;
+  border:           none            ;
+
+  /*Estilo del footer*/
+  background-color: rgb(20, 20, 20)    ;
+}
+
+
+
+#contacto {
+  /*Comportamiento de los contenedores de contacto*/
+  display:          flex            ;     
+  flex-direction:   row             ;       /*pongo los contenedores en una sola linea*/
+  justify-content:  center          ;       /*centro los contenedores*/
+  gap:              50px            ;       /*separo los contenedores entre si*/
+  font-size:        25px            ;   
+  font-family:      'Roboto', sans-serif;    
+}
+
+
+
+#contacto ul {
+  /*Comportamiento de los iconos respecto de las palabras de contacto*/
+  display:          flex             ;
+  flex-direction:   row              ;
+  gap:              20px             ;       /*separo los iconos de las palabras*/
+
+
+  /*Estilo de lis iconos y palabras*/
+  list-style:       none             ;
+  color:            rgb(131, 131, 131) ;
+}
+
+
+#contacto ul li a {
+  /*Estilo de lis iconos y palabras*/
+  text-decoration:  none                 ;    
+  color:            rgb(131, 131, 131) ;
+}
+
+
+
+/* CAMBIO COLOR DE REDES CUANDO PASO MOUSE */
+#contacto ul li i:hover {
+  color:            red           ;
+}
+
+
+.politica {
+  /*Comportamiento de los contenedores de politica*/
+  display:          flex                  ;
+  align-items:      end                   ;
+  justify-content:  space-between         ;
+}
+
+
+
+.politica ul li a{
+  /*Estilo de politica*/
+  list-style:        none                 ;
+  font-size:         18px                 ;
+  list-style:        none                 ;
+  text-decoration:   none                 ;
+  color:             rgb(141, 141, 240) ; 
+}
+
+
+
+.politica ul li {
+  /*Estilo de politica*/
+  list-style:       none                   ;
+}
+
+
+
+.politica ul {
+  /*Estilo de politica*/
+  display:          flex                  ;
+  flex-direction:   row                   ;
+  gap: 40px;
+ 
+}
+
+
+
+.politica p {
+  font-size:        18px                   ;
+  color:            rgb(141, 141, 240)   ;
+}
